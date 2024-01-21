@@ -9,6 +9,9 @@ const port = 5000;
 
 const app = express();
 app.use(express.json());
+app.use('/', (req,res) => {
+  res.json("Connected Sccessfully!")
+});
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.options("*", cors());

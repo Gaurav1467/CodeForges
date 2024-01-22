@@ -12,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.options("*", cors());
+app.all("/health_check", function(request, response){ response.sendStatus(200)})
 app.use("/spaces", require("./routes/spaceRoutes"));
 app.use("/users", require("./routes/userRoutes"));
 app.use(errorHandler);

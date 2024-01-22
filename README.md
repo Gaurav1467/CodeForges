@@ -14,18 +14,12 @@ To run this project, you will need to add the following environment variables to
 
   - `JWT_SECRET`
 
-  - `PORT`
-
-- `frontend`
-
-  - `REACT_APP_BACKEND_URL`
-
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/nitishgupta08/CodeForges.git
+  git clone https://github.com/Gaurav1467/codeforges.git
 ```
 
 - Run frontend
